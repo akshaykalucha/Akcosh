@@ -1,0 +1,199 @@
+.mysoftwareTable{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 9rem;
+}
+@media (min-width: 993px){
+    .mysoftwareTable {
+        width: 80%;
+    }
+}
+
+@media (min-width: 610px){
+    .mysoftwareTable {
+        width: 95%;
+    }
+}
+
+.mysoftwareTable h1{
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+table{
+    border-color: grey;
+    border-collapse: collapse;
+    width: 100%;
+}
+.softwareTable tr:nth-child(1){
+    border-top: solid #a9a9a9 thin;
+}
+.softwareTable th{
+    font-size: 16px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    min-width: 108px;
+}
+.softwareTable table th {
+    font-weight: 400;
+    box-shadow: 0px 2px 0px 0.1px #cccccc;
+    text-align: center;
+    border-left: 1px solid #bdbcbc;
+    border-right: 1px solid #bdbcbc;
+}
+.softwareTable table th:last-child{
+    border-right: none;
+}
+
+.softwareTable table th:first-child{
+    border-left: none;
+}
+
+.softwareTable td{
+    border-right: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    padding: 15px;
+    color: black;
+    border-bottom: 1px solid #a9a9a9;
+    letter-spacing: 1px;
+    text-align: left;
+    border-collapse: separate !important;
+}
+
+.softwareTable table td:first-child{
+    border-left: none;
+}
+
+.softwareTable table td:last-child{
+    border-right: none;
+}
+
+tr:nth-child(1) {
+    border-top: solid #a9a9a9 thin;
+}
+.softwareSection{
+    color: rgba(0,0,0,0.8);
+    background: rgb(249, 249, 249);
+}
+.softwareIntro h2{
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: 3px;
+}
+.softwareIntro p{
+    font-size: 14px;
+}
+
+.mysoftwareTable{
+    padding-bottom: 5rem;
+}
+.webarch{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 2rem 0;
+}
+.websiteArchitecture{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.websiteArchitecture h3{
+    margin: 0;
+    font-weight: 500;
+}
+.Archcontent{
+    width: 270px;
+}
+.Archcontent ul{
+    margin: 0 18px;
+    padding-top: 13px;
+}
+.Archcontent ul li{
+    font-size: 12.8px;
+    font-weight: bold;
+}
+.softwareservices{
+    max-width: 1280px;
+    width: 60%;
+    margin: 0px auto;
+    padding: 5rem 0;
+}
+
+.softwareservices h2{
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+.softwareservices tr:nth-child(1){
+    border-top: solid #a9a9a9 thin;
+}
+.softwareservices th{
+    font-size: 16px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    min-width: 108px;
+}
+.softwareservices table th {
+    font-weight: 400;
+    box-shadow: 0px 2px 0px 0.1px #cccccc;
+    text-align: center;
+    border-left: 1px solid #bdbcbc;
+    border-right: 1px solid #bdbcbc;
+}
+.softwareservices table th:last-child{
+    border-right: none;
+}
+
+.softwareservices table th:first-child{
+    border-left: none;
+}
+
+.softwareservices td{
+    border-right: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    padding: 15px;
+    color: black;
+    border-bottom: 1px solid #a9a9a9;
+    letter-spacing: 1px;
+    text-align: left;
+    border-collapse: separate !important;
+}
+
+.softwareservices table td:first-child{
+    border-left: none;
+}
+
+.softwareservices table td:last-child{
+    border-right: none;
+}
+
+
+@media (max-width: 770px){
+    table{
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+    .softwareservices{
+        width: 90%
+    }
+}
+
+@media (max-width: 1216px){
+    .Archcontent{
+        padding-bottom: 3rem;
+    }
+    .Archcontent ul{
+        padding-top: 6px;
+    }
+}

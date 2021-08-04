@@ -1,0 +1,313 @@
+.populararticles {
+    padding: 2rem 0px;
+}
+.populararticles {
+    max-width: 1280px;
+    margin: 0px auto;
+    width: 90%;
+}
+.articlesheading{
+    margin-bottom: 2rem;
+    transition: all 0.3s ease 0s;
+}
+.articleContent {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.articleCard{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-self: stretch;
+    max-width: 32%;
+}
+.cardcontent{
+    border-radius: 0.2rem;
+    box-shadow: rgb(33 33 33 / 14%) 0px 0px 10px 0px;
+    background: rgb(255, 255, 255);
+    transition: all 0.7s ease 0s;
+    height: 100%;
+    overflow: hidden;
+}
+.cardcontent:hover, .cardcontent:focus{
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 20px 0px;
+    transition: all 0.7s ease 0s;
+}
+.articlecardimg{
+    overflow: hidden;
+    cursor: pointer;
+    height: 200px;
+}
+.articleimgwrapper {
+    position: relative;
+    overflow: hidden;
+}
+.articlemainimg{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    transition: none 0s ease 0s;
+}
+.articlecarddesc {
+    padding: 1rem;
+}
+.articlecardheading{
+    color: rgb(33, 33, 33);
+    cursor: pointer;
+}
+
+.articlecardp{
+    color: rgb(97, 97, 97);
+    overflow-y: hidden;
+    cursor: pointer;
+    height: 150px;
+    margin: 0 0 1.45rem;
+}
+.articlecardtags{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    height: 80px;
+    margin-bottom: 0.5rem;
+}
+.articleCardItalics{
+    color: rgb(33, 33, 33);
+    font-size: 0.8em;
+    cursor: pointer;
+}
+.articleitalic{
+    margin-left: 10px;
+}
+.articlecardtags a{
+    margin: 0px 1rem 1rem 0px;
+    color: rgb(255, 255, 255);
+}
+.articlecardtags a:last-child {
+    margin: 0px 0px 1rem;
+}
+.articlebutton{
+    padding: 2rem 0px;
+    text-align: center;
+}
+.seemoreArticle{
+    background-image: linear-gradient(10deg, rgb(0, 114, 255) 0%, rgb(0, 198, 255) 100%);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    margin: 0px auto;
+    width: 160px;
+    height: 50px;
+    box-shadow: rgb(106 147 255) 0px 4px 0px -4px;
+    border: none;
+    appearance: none;
+    user-select: none;
+}
+.seemoreArticle a{
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 50px;
+}
+.articlecardtags a:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+}
+.react{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(97, 218, 251);
+}
+.dev{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(38, 50, 56);
+}
+.tech{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(33, 150, 243);
+}
+.stack{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(104, 110, 7);
+}
+.next{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(102, 51, 153);
+}
+.tips{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(156, 39, 176);
+}
+.bio{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(244, 67, 54);
+}
+.career{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(0, 188, 212);
+}
+.travel{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(255, 152, 0);
+}
+.thinking{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(139, 195, 74);
+}
+.tools{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(0, 150, 136);
+}
+.review{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(255, 193, 7);
+}
+.hackathon{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(96, 125, 139);
+}
+.css{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(51, 170, 220);
+}
+.ai{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    background: rgb(13, 71, 161);
+}
+
+@media (min-width: 601px){
+    .populararticles {
+        width: 90%;
+    }
+}
+@media (min-width: 993px){
+    .populararticles {
+        width: 80%;
+    }
+}
+@media (max-width: 960px){
+    .articleCard{
+        max-width: 48%;
+    }
+    .articlecardtags{
+        height: 38px;
+    }
+    .articlecardtags a:last-child{
+        margin: 0px 0px 0.4rem;
+    }
+    .articlecardtags a{
+        padding: 0.05rem 0.5rem;
+        margin: 0px 0.4rem 0.4rem 0px;
+        font-size: 8pt;
+    }
+}
+@media (max-width: 680px){
+    .cardcontent{
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .articlecardimg{
+        height: 150px;
+        width: auto;
+        flex: 1 1 0%;
+    }
+    .articlecarddesc{
+        flex: 2 1 0%;
+        overflow: hidden;
+        padding: 0px 1rem;
+    }
+    .articlecardheading{
+        margin-bottom: 0.1rem;
+        font-size: 12pt;
+    }
+    .articlecardp{
+        height: 20px;
+        overflow-y: hidden;
+        margin-bottom: 0.1rem;
+        font-size: 10pt;
+    }
+    .articleCardItalics{
+        font-size: 0.6em;
+    }
+    .articlemainimg{
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px){
+    .articleCard{
+        max-width: 100%;
+    }
+}

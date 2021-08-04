@@ -1,0 +1,57 @@
+.parentNav{
+    position: fixed;
+    background: rgb(255, 255, 255);
+    box-sizing: inherit;
+    width: 100%;
+    border-bottom: 0.01em solid rgb(204, 204, 204);
+    margin-bottom: unset;
+    z-index: 1;
+}
+.nameNav{
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+}
+.nameNav a{
+    color: #212121;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 27px;
+    padding-top: 6px;
+}
+.desktopnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0px;
+}
+.navLinks{
+    /* display: flex; */
+}
+
+.navLinks a{
+    margin-right: 1rem;
+    color: #6d6d6d;
+    opacity: 0.9;
+}
+.Nav__Logo-A{
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-bottom: 0px;
+}
+.toggleLight{
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: 0.3rem;
+    background: none;
+    text-align: left;
+    padding: 1px 6px;
+}
+.toggleLight img{
+    margin: 0;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}

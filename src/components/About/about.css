@@ -1,0 +1,122 @@
+.AboutContainer{
+    width: 100%;
+    padding-top: 8.5rem;
+}
+.Aboutmewrapper{
+    max-width: 1280px;
+    margin: 0px auto;
+    width: 90%;
+}
+.aboutheading{
+    margin-bottom: 2rem;
+}
+@media (min-width: 601px){
+    .Aboutmewrapper {
+        width: 90%;
+    }
+}
+@media (min-width: 993px){
+    .Aboutmewrapper {
+        width: 80%;
+    }
+}
+
+.aboutmeContent{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.aboutcontact{
+    padding: 2rem 0px;
+}
+.aboutIntro{
+    width: 100%;
+    max-width: 48%;
+    margin: 0px auto;
+}
+.aboutsetupimg{
+    width: 100%;
+    max-width: 48%;
+}
+.aboutsetupimg img:hover{
+    transform: none;
+}
+.aboutp{
+    color: rgb(33, 33, 33);
+    line-height: 1.6;
+}
+.aboutp a{
+    color: #07f;
+}
+.businessInquiry{
+    padding-left: 1.5rem;
+}
+.businessLocation{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(33, 33, 33);
+}
+.EnquiryImg{
+    margin-right: 0.6rem;
+    transform: none;
+}
+.aboutseemore{
+    color: #07f;
+}
+.abouth2{
+    margin-bottom: 3rem;
+}
+.contactlinks{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+    gap: 1.2rem;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contactlogo img{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    margin-bottom: unset;
+    margin-right: 0.5rem;
+}
+.contactlogo img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+.contactlogo a{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(33, 33, 33);
+}
+.contactlinks img{
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 960px){
+    .aboutheading{
+        text-align: center;
+    }
+    .aboutmeContent{
+        flex-direction: column;
+    }
+    .aboutIntro{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .aboutsetupimg{
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 640px){
+    .contactlinks{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

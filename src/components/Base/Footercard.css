@@ -1,0 +1,105 @@
+.footercard{
+    text-align: center;
+    padding-top: 3rem;
+    max-width: 1280px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+@media (min-width: 993px){
+    .footercard {
+        width: 80%;
+    }
+}
+@media (min-width: 601px){
+    .footercard{
+        width: 90%;
+    }
+}
+.footerCardSection {
+    width: 70%;
+    margin: 0px auto -12rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 5px 0px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 3px 1px -2px;
+    border-radius: 5px;
+    position: relative;
+    padding: 2rem;
+}
+.footerCardheading{
+    margin: 0px 0px 3px;
+    padding: 0px;
+    color: rgb(21, 23, 26);
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: 700;
+}
+.footerCardP{
+    margin-bottom: 1em;
+    color: rgb(115, 138, 148);
+    font-size: 1.2em;
+    line-height: 1.55em;
+    letter-spacing: 0.2px;
+}
+.footerforminput{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0rem 4rem;
+}
+.footerinput{
+    padding: 0.5rem;
+    border: 2px solid rgb(0, 182, 255);
+    border-radius: 7px;
+    flex: 2 1 0%;
+}
+.footerbutton{
+    background-image: linear-gradient(10deg, rgb(0, 114, 255) 0%, rgb(0, 198, 255) 100%);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin: 0px auto 0px 1rem;
+    width: 160px;
+    box-shadow: rgb(106 147 255) 0px 4px 0px -4px;
+    border: none;
+    appearance: none;
+    user-select: none;
+    flex: 1 1 0%;
+    border-radius: 6px;
+    height: 48px;
+}
+.footerinput::placeholder{
+    color: #b3b3b3;
+}
+
+@media (max-width: 960px){
+    .footerforminput{
+        padding: 0rem 2rem;
+    }
+    .footerCardSection{
+        padding: 2rem 1rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px){
+    .footerCardSection{
+        width: 100%;
+    }
+    .footerCardheading{
+        font-size: 1em;
+    }
+    .footerCardP{
+        font-size: 0.8em;
+    }
+    .footerforminput{
+        flex-direction: column;
+    }
+    .footerinput{
+        flex: unset;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .footerbutton{
+        flex: unset;
+        margin: 0px auto;
+    }
+}

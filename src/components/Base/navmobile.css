@@ -1,0 +1,32 @@
+.navmobile{
+    max-width: 1280px;
+    margin: 0px auto;
+    width: 90%;
+    padding: 0.7rem 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.parentMobNav{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.01em solid rgb(204, 204, 204);
+    position: fixed;
+    margin-bottom: unset;
+}
+.navmobilea{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(33, 33, 33);
+}
+.navmobilelogo{
+    transition: all 0.5s ease 0s;
+    width: 2.8rem;
+    margin-bottom: 0px;
+    margin-right: 0.5rem;
+    height: 3rem;
+}

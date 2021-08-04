@@ -1,0 +1,115 @@
+.FooterMain{
+    margin-top: 6rem;
+}
+.footerContent{
+    width: 100%;
+    padding: 8rem 0px 2rem;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(10deg, rgb(0, 114, 255) 0%, rgb(0, 198, 255) 100%);
+}
+@media (min-width: 993px){
+    .footerdisplay {
+        width: 80%;
+    }
+}
+.footerdisplay{
+    padding: 2rem 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+.footerdisplay ul{
+    margin: 0 0 1.45rem;
+}
+.footerdisplay li{
+    margin-bottom: .725rem;
+}
+.footerBrand{
+    list-style: none;
+    align-self: center;
+}
+.footerBrand a{
+    color: rgb(255, 255, 255);
+}
+.brandfirst{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.footerimg{
+    transition: all 0.5s ease 0s;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 0px;
+}
+.followmelogo{
+    margin-right: 1rem;
+}
+.followmeimg{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+}
+.followmeimg:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+.FooterEnding{
+    max-width: 850px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 1rem;
+}
+.footerendingcontent{
+    margin: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.footerendinglink{
+    margin: 0px 0.2rem;
+}
+.footerName{
+    text-decoration: none;
+    color: #07f;
+    margin: 0px 0.2rem;
+}
+.reactfooterimg{
+    margin: 0px 0.2rem;
+    position: relative;
+    top: 0.15rem;
+}
+.reactfootervercelimg{
+    margin: 0px 0.2rem;
+    position: relative;
+    top: 0.15rem;
+    width: 24px;
+}
+
+@media (min-width: 601px){
+    .footerdisplay{
+        width: 90%;
+    }
+}
+
+@media (max-width: 960px){
+    .FooterEnding{
+        width: 95%;
+    }
+    .footerendingcontent{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 680px) {
+    .footerdisplay{
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

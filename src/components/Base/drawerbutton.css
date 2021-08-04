@@ -1,0 +1,144 @@
+.toggle-button__burger-light{
+    width: 1.6rem;
+    height: 0.15rem;
+    background: #323232;
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+}
+
+.toggle-button__burger-light::before,
+.toggle-button__burger-light::after{
+    content: '';
+    position: absolute;
+    width: 1.6rem;
+    height: 0.15rem;
+    background: #323232;
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+}
+
+.toggle-button__burger-light::before{
+    transform: translateY(-8px);
+}
+
+.toggle-button__burger-light::after{
+    transform: translateY(8px);
+}
+
+/* ANimation */
+
+.toggle-button.open .toggle-button__burger-light{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    transition: transform .4s ease-in-out;
+
+}
+.toggle-button.open .toggle-button__burger-light::before{
+    background: #000;
+    transform: rotate(45deg) translate(35px, -35px);
+    transition: transform .3s ease-in-out;
+
+}
+
+.toggle-button.open .toggle-button__burger-light::after{
+    background: #000;
+    transform: rotate(-45deg) translate(35px, 35px);
+    transition: transform .3s ease-in-out;
+
+}
+
+.toggle-button__burger-dark{
+    width: 1.6rem;
+    height: 0.15rem;
+    background: white;
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+}
+
+.toggle-button__burger-dark::before,
+.toggle-button__burger-dark::after{
+    content: '';
+    position: absolute;
+    width: 1.6rem;
+    height: 0.15rem;
+    background: white;
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+}
+
+.toggle-button__burger-dark::before{
+    transform: translateY(-8px);
+}
+
+.toggle-button__burger-dark::after{
+    transform: translateY(8px);
+}
+
+/* ANimation */
+
+.toggle-button.open .toggle-button__burger-dark{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    transition: transform .4s ease-in-out;
+
+}
+.toggle-button.open .toggle-button__burger-dark::before{
+    background: white;
+    transform: rotate(45deg) translate(35px, -35px);
+    transition: transform .3s ease-in-out;
+
+}
+
+.toggle-button.open .toggle-button__burger-dark::after{
+    background: white;
+    transform: rotate(-45deg) translate(35px, 35px);
+    transition: transform .3s ease-in-out;
+
+}
+
+
+.btn1{
+    position: fixed;
+    left: 86%;
+    top: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 4;
+}
+
+.btn2{
+    position: fixed;
+    left: 28%;
+    top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.01s ease-in-out;
+    z-index: 4;
+}
+
+
+
+@media (max-width: 960px){
+    .btn2{
+        left: 62%;
+        z-index: 4;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn2{
+        left: 28%;
+        z-index: 4;
+    }
+}

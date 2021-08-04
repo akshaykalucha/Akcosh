@@ -1,0 +1,63 @@
+.drawerClosed {
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    top: 0px;
+    right: -275px;
+    width: 0px;
+    opacity: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91) 0s;
+}
+
+.drawerOpen {
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    top: 0px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91) 0s;
+    width: 20%;
+    right: 0px;
+    opacity: 1;
+}
+.Sidelist{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Sidelist a{
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #6d6d6d;
+    opacity: 0.7;
+}
+
+.Sidelist button{
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: 0.3rem;
+    background: none;
+    text-align: left;
+}
+
+.Sidelist button img{
+    margin: 0px;
+}
+
+
+@media (max-width: 960px){
+    .drawerOpen{
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px){
+    .drawerOpen{
+        width: 75%;
+    }
+}

@@ -1,0 +1,87 @@
+.react{
+    background: rgb(97, 218, 251);
+}
+.dev{
+    background: rgb(38, 50, 56);
+}
+.tech{
+    background: rgb(33, 150, 243);
+}
+.stack{
+    background: rgb(104, 110, 7);
+}
+.next{
+    background: rgb(102, 51, 153);
+}
+.tips{
+    background: rgb(156, 39, 176);
+}
+.bio{
+    background: rgb(244, 67, 54);
+}
+.career{
+    background: rgb(0, 188, 212);
+}
+.travel{
+    background: rgb(255, 152, 0);
+}
+.thinking{
+    background: rgb(139, 195, 74);
+}
+.tools{
+    background: rgb(0, 150, 136);
+}
+.review{
+    background: rgb(255, 193, 7);
+}
+.hackathon{
+    background: rgb(96, 125, 139);
+}
+.css{
+    background: rgb(51, 170, 220);
+}
+.ai{
+    background: rgb(13, 71, 161);
+}
+
+.mainBlog{
+    width: 100%;
+    border-bottom: 0.01em solid rgb(204, 204, 204);
+    margin-bottom: 3rem;
+}
+
+.textView{
+    max-width: 850px;
+    margin: 0px auto;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+.tags__view{
+    /* display: flex; */
+    /* align-items: center; */
+    margin: 0px auto;
+    /* flex-wrap: wrap; */
+    padding: 1rem 0px;
+    text-align: center;
+}
+.tags__view a{
+    color: rgb(255,255,255);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    margin: 0px 1rem 1rem 0px;
+    color: rgb(255, 255, 255);
+}
+.tags__view a:hover{
+    opacity: 0.7;
+}
+
+.tags__view a:last-child{
+    margin: 0px 0px 1rem;
+}
+
+.dates_views{
+    text-align: center;
+}

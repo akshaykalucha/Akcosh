@@ -1,0 +1,67 @@
+.myskills{
+    margin-bottom: 1.45rem;
+    color: rgb(33, 33, 33);
+    padding: 8rem 1rem 7rem;
+    clip-path: polygon(0% 14%, 100% 0px, 100% 84%, 0px 100%);
+    background: rgb(249, 249, 249);
+    text-align: center;
+}
+.skillsection{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.featured{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 0px;
+    max-width: 960px;
+    margin: 0px auto;
+}
+.featured img{
+    width: 200px;
+    transition: all 0.2s ease-in-out 0s;
+    margin: 0px auto 1rem;
+}
+.featured img:hover{
+    transform: scale(1.1);
+}
+.featured h4{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.mytechstack{
+    text-align: left;
+}
+.mytechstack a{
+    color: rgb(33, 33, 33);
+    text-decoration: underline;
+}
+
+@media (max-width: 710px) {
+    .skillsection{
+        width: 98%;
+    }
+}
+
+@media (max-width: 980px) {
+    .skillsection{
+        width: 90%;
+    }
+}
+
+@media (max-width: 680px) {
+    .skillsection{
+        width: 98%;
+    }
+    .featured{
+        flex-direction: column;
+    }
+    .workimg{
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+}
