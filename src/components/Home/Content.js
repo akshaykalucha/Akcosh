@@ -74,7 +74,7 @@ const SharedTwitter = [
     },
     {
         "img": imgAscii,
-        "link": "https://github.com/akshaykalucha3/FeaturePatch-VisionTransformation",
+        "link": "https://github.com/akshaykalucha3/meme2AsciiArt",
         "heading": "Image2Ascii",
         "desc": "Get your favourite meme template converted to ascii values & spam those dank meme comments"
     },
