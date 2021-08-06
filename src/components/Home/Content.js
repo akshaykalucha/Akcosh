@@ -15,6 +15,7 @@ const fullstack = require('../Assets/fullstack.svg')
 const seo = require('../Assets/seo.svg')
 const Redispic = require('../Assets/redispubsub.jpeg')
 const ProtoPic = require('../Assets/protocolbuffers.png')
+// eslint-disable-next-line
 const TravelPic = require('../Assets/chicagoreszd.jpg')
 const GitRescue = require('../Assets/gitrescue.png')
 

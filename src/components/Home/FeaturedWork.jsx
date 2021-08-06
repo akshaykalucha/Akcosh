@@ -11,7 +11,7 @@ class FeaturedWork extends Component {
                     <h4 className="sideProjectsheading">Side Projects</h4>
                     <div className="projectCards">
                         {sideProjs.map((data, key) => {
-                            return <a target="_blank" rel="nopener noreferrer" key={key} href={data.link} className="cardAnchor">
+                            return <a target="_blank" rel="noopener noreferrer" key={key} href={data.link} className="cardAnchor">
                                 <div className="card">
                                     <div className="cardHeading">
                                         <h3>{data.heading}</h3>
