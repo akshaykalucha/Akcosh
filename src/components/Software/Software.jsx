@@ -86,6 +86,10 @@ class Software extends Component {
     }
 }
 
-
+const mapStateToProps = state => {
+    return {
+        
+    }
+}
 
 export default Software;
