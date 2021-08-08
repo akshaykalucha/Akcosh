@@ -5,6 +5,7 @@ import { Tableheading } from '../Home/Content';
 import { webArchitecture } from '../Home/Content';
 import { ServicesHeading } from '../Home/Content';
 import { SoftwareServices } from '../Home/Content';
+import { connect } from 'react-redux';
 
 
 class Software extends Component {
