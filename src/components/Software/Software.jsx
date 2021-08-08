@@ -98,4 +98,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default  Software;
+export default connect(mapDispatchToProps, mapStateToProps)(Software);
