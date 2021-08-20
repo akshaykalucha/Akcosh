@@ -22,7 +22,7 @@ class Intro extends Component {
                             I love open source and building side projects. algorithms to document the logic, reasoning, and problems,
                             but there’s also a lot more to it.</p>
                     <div className="neon_btn">
-                        <a target="_blank" rel="noopener noreferrer" className="neon_btn_link" href="https://docs.google.com/document/d/1JIEm5SEBs2JGsH4EgBcQNbab5A2yPjY1A50Sw46Qc8w/edit?usp=sharing">View resume</a>
+                        <a target="_blank" rel="noopener noreferrer" className="neon_btn_link" href="#">View resume</a>
                         <NavLink className="neon_btn_link" to="/contact/">Get In Touch</NavLink>
                     </div>
                 </div>
