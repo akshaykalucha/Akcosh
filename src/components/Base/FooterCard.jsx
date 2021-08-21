@@ -7,7 +7,7 @@ class FooterCard extends Component {
             <div className="footercard">
                 <div className="footerCardSection">
                     <form action="#" className="footercardform">
-                        <h3 className="footerCardheading">Subscribe to Akcosh.com</h3>
+                        <h3 className="footerCardheading">Subscribe to Akcosh.me</h3>
                         <p className="footerCardP">And get the latest articles delivered right to your inbox!</p>
                         <div className="footerforminput">
                             <input aria-label="please insert your email" form="[object Object]" placeholder="youremail@example.com" type="email" className="footerinput" />
