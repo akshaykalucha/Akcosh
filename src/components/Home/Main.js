@@ -49,7 +49,7 @@ export default class Main extends Component {
                         <Suspense fallback={<LoadingMessage />}>
                         <Route path="/blog/:title/" exact component={BlogArticle} />
                         <Route path="/" exact component={IndexComponent} />
-                        <Route path="/about" exact component={AboutComponent} />
+                        <Route path="about" exact component={AboutComponent} />
                         <Route path="/contact" exact component={ContactComponent} />
                         <Route path="/software" exact component={SoftwareComponent} />
                         </Suspense>
