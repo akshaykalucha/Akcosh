@@ -57,8 +57,8 @@ function ConvLstToDate(arr){
             <div className="mainBlog">
                 <div className="textView">
                     <div className="tags__view">
-                        {BlogData.tags.map((tag) => 
-                            <a className={`blogTag ${tag}`} href="/">{tag}</a>
+                        {BlogData.tags.map((tag, key) => 
+                            <a key={key} className={`blogTag ${tag}`} href="/">{tag}</a>
                         )}
                     </div>
                     <div className="dates_views">

@@ -4,7 +4,7 @@ import Nav from '../Base/Nav';
 import Footer from '../Base/Footer';
 import ScrollTop from '../Base/ScrollTop';
 import Loading from './Loading';
-
+import BlogArticle from '../Blog/BlogArticle';
 const IndexComponent = (
     lazy(()=> (
         import ('./Index')
@@ -28,11 +28,11 @@ const ContactComponent = (
     ))
 )
 
-const BlogArticle = (
-    lazy(() => (
-        import('../Blog/BlogArticle')
-    ))
-)
+// const BlogArticle = (
+//     lazy(() => (
+//         import('../Blog/BlogArticle')
+//     ))
+// )
 
 const LoadingMessage = () => (
     <Loading />
