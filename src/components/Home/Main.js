@@ -45,13 +45,14 @@ export default class Main extends Component {
                 <ScrollTop />
                 <Nav />
                     <Switch>
-                        <Suspense fallback={<LoadingMessage />}>
                         <Route path="/blog/:title/" exact component={BlogArticle} />
+                        <Suspense fallback={<LoadingMessage />}>
                         <Route path="/" exact component={IndexComponent} />
                         <Route path="/about">
                             <AboutComponent />
                         </Route>
                         <Route path="/contact" exact component={ContactComponent} />
+                        <Route path="/blog" exact component={SoftwareComponent} />
                         <Route path="/software" exact component={SoftwareComponent} />
                         </Suspense>
                     </Switch>
