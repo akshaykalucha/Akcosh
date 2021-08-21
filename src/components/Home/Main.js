@@ -20,12 +20,12 @@ const AboutComponent = (
 
 const SoftwareComponent = (
     lazy(() => (
-      import('../About/About')
+      import('../Software/Software')
     ))
 )
 const ContactComponent = (
     lazy(() => (
-      import('../Contact/Contact')
+      import('../About/About')
     ))
 )
 
