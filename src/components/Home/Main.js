@@ -4,7 +4,6 @@ import Nav from '../Base/Nav';
 import Footer from '../Base/Footer';
 import ScrollTop from '../Base/ScrollTop';
 import Loading from './Loading';
-// import BlogArticle from '../Blog/BlogArticle';
 
 const IndexComponent = (
     lazy(()=> (
