@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './Footercard.css';
 
 class FooterCard extends Component {
+    state = {
+        clicked: false,
+    }
     render() { 
         return (
             <div className="footercard">
