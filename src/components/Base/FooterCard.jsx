@@ -5,6 +5,7 @@ class FooterCard extends Component {
     state = {
         clicked: false,
         changeClr: false,
+        email: "",
     }
     subscribe = (e) => {
         e.preventDefault();
@@ -15,7 +16,8 @@ class FooterCard extends Component {
         setTimeout(() => {
             this.setState({
                 clicked: true,
-                changeClr: false
+                changeClr: false,
+                email: "",
             })
         }, 2000);
     }
@@ -30,7 +32,7 @@ class FooterCard extends Component {
                         <h3 className="footerCardheading">Subscribe to Akcosh.me</h3>
                         <p className="footerCardP">And get the latest articles delivered right to your inbox!</p>
                         <div className="footerforminput">
-                            <input aria-label="please insert your email" form="[object Object]" placeholder="youremail@example.com" type="email" className="footerinput" />
+                            <input value={this.state.email} onChange={(e) => this.setState({email: e.target.value})} aria-label="please insert your email" form="[object Object]" placeholder="youremail@example.com" type="email" className="footerinput" />
                             <button disabled={this.state.changeClr ? true : false} onClick={(e) => {this.subscribe(e)}} type="submit" className="footerbutton">Subscribe</button>
                         </div>
                         <h4 style={!this.state.clicked ? {display: "none"} : {display: "block"}} className="promptmsg">Thank you! You will receive your first email shortly 
