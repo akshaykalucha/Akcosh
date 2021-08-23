@@ -66,8 +66,15 @@
     border-radius: 6px;
     height: 48px;
 }
+.footerbutton:disabled{
+    background: gray;
+}
 .footerinput::placeholder{
     color: #b3b3b3;
+}
+.promptmsg{
+    margin: 1rem 0px;
+    font-weight: normal;
 }
 
 @media (max-width: 960px){
