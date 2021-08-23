@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Footercard.css';
+import axios from 'axios';
 
 class FooterCard extends Component {
     state = {
@@ -7,12 +8,19 @@ class FooterCard extends Component {
         changeClr: false,
         email: "",
     }
+    
+    validateEmail = (email) => {
+        let resp = axios.get(`https://ipqualityscore.com/api/json/email/acyGUsOrUMedF7S8Qy9r9cTRukKbY57f/${email}`)
+        .then(response => console.log(response))
+        console.log(resp, "helloo")
+    }
     subscribe = (e) => {
         e.preventDefault();
         e.disabled = true
         this.setState({
             changeClr: true
         })
+        this.validateEmail(this.state.email)
         setTimeout(() => {
             this.setState({
                 clicked: true,
@@ -21,7 +29,6 @@ class FooterCard extends Component {
             })
         }, 2000);
     }
-
 
 
     render() { 
