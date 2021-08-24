@@ -10,7 +10,14 @@ class FooterCard extends Component {
     }
     
     validateEmail = (email) => {
-        let resp = axios.get(`https://ipqualityscore.com/api/json/email/acyGUsOrUMedF7S8Qy9r9cTRukKbY57f/${email}`)
+        let resp = axios({
+            method: "get",
+            url: `https://www.ipqualityscore.com/api/json/email/acyGUsOrUMedF7S8Qy9r9cTRukKbY57f/${email}`,
+            headers : {
+                'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+                'Access-Control-Allow-Origin' : '*'
+            }
+        })
         .then(response => console.log(response))
         console.log(resp, "helloo")
     }
