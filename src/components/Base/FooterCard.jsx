@@ -10,16 +10,13 @@ class FooterCard extends Component {
     }
     
     validateEmail = (email) => {
-        let resp = axios({
-            method: "get",
-            url: `https://www.ipqualityscore.com/api/json/email/acyGUsOrUMedF7S8Qy9r9cTRukKbY57f/${email}`,
-            headers : {
-                'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
-                'Access-Control-Allow-Origin' : '*'
-            }
-        })
+        axios.get(`https://www.ipqualityscore.com/api/json/email/acyGUsOrUMedF7S8Qy9r9cTRukKbY57f/${email}`,{headers: {
+            'Access-Control-Allow-Origin' : '*',
+            'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json' 
+        }})
         .then(response => console.log(response))
-        console.log(resp, "helloo")
+        .catch(err => console.log(err))
     }
     subscribe = (e) => {
         e.preventDefault();
