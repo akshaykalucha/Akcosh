@@ -11,6 +11,9 @@ class FooterCard extends Component {
     
     validateEmail = (email) => {
         axios.get(`https://www.ipqualityscore.com/api/json/email/acyGUsOrUMedF7S8Qy9r9cTRukKbY57f/${email}`,{headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache',
+            'Expires': '0',
             'Access-Control-Allow-Origin' : '*',
             'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
             'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json' 
