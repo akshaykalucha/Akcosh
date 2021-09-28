@@ -4,13 +4,14 @@ import skill2 from './icon5.svg';
 import skill3 from './icon4.svg';
 import './mywork.css';
 import { NavLink } from 'react-router-dom';
+import {connect} from 'react-redux';
 
 
 class MyWork extends Component {
 
     render() { 
         return ( 
-            <div className="myskills">
+            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a", color:"white"} : null } className="myskills">
                 <div className="skillsection">
                     <h2>Skills</h2>
                     <div className="featured">
@@ -36,4 +37,11 @@ class MyWork extends Component {
     }
 }
  
-export default MyWork;
+const mapStateToProps = state => {
+    return{
+        isDark: state.WebsiteInterface.isDark
+    }
+}
+
+
+export default connect(mapStateToProps)(MyWork);

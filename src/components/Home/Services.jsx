@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './services.css';
 import { MyServices } from './Content';
+import {connect} from "react-redux";
 
 class Services extends Component {
     render() { 
         return ( 
-            <div className="services">
+            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a", color:"white"} : null } className="services">
                 <div className="servicesContent">
                     <h2>Services</h2>
                     <div className="servicesdiv">
@@ -13,7 +14,7 @@ class Services extends Component {
                             return <div className="servicesCard" key={key}>
                                 <div className="servicesimg"><img src={content.img} alt={content.heading} /></div>
                                 <h4 className="servicesheading">{content.heading}</h4>
-                                <p>{content.desc}</p>
+                                <p style={ this.props.isDark ? {color:"white"} : null }>{content.desc}</p>
                             </div>
                         })}
                     </div>
@@ -22,5 +23,12 @@ class Services extends Component {
         );
     }
 }
- 
-export default Services;
+
+const mapStateToProps = state => {
+    return{
+        isDark: state.WebsiteInterface.isDark
+    }
+}
+
+
+export default connect(mapStateToProps)(Services);
