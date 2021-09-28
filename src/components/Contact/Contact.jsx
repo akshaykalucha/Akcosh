@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './contact.css';
+import {connect} from "react-redux";
 
 class Contact extends Component {
     render() { 
         return ( 
-            <div className="contactme">
+            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a", color: "white"} : null } className="contactme">
                 <div className="contactform">
                     <h4 className="contactmehead">
                         Feel free to email me via
@@ -30,5 +31,11 @@ class Contact extends Component {
         );
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        isDark: state.WebsiteInterface.isDark
+    }
+}
  
-export default Contact;
+export default connect(mapStateToProps)(Contact);

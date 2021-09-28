@@ -4,8 +4,7 @@ import Darkness from './darkness.svg'
 import { connect } from 'react-redux'
 import { setDark } from '../Store/actions';
 import Brightness from './brightness.svg';
-import { NavLink } from 'react-router-dom'
-
+import { NavLink } from 'react-router-dom';
 
 
  const SideDrawer = props => {
@@ -15,13 +14,13 @@ import { NavLink } from 'react-router-dom'
     }
 
     return (
-        <div className={props.showSidedrawer ? "drawerOpen" : "drawerClosed"} onClick={props.unshowsideDrawer}>
+        <div style={ props.isDarknessStore ? {backgroundColor: "#2b2a2a"} : null } className={props.showSidedrawer ? "drawerOpen" : "drawerClosed"} onClick={props.unshowsideDrawer}>
             <div className="Sidelist">
-                <NavLink activeStyle={{color: "#212121", opacity: "1"}} exact to="/">Home</NavLink>
-                <NavLink activeStyle={{color: "#212121", opacity: "1"}} to="/about/">About</NavLink>
-                <NavLink activeStyle={{color: "#212121", opacity: "1"}} to="/blog/">Blog</NavLink>
-                <NavLink activeStyle={{color: "#212121", opacity: "1"}} to="/software/">Software</NavLink>
-                <NavLink activeStyle={{color: "#212121", opacity: "1"}} to="/contact/">Contact</NavLink>
+                <NavLink style={ props.isDarknessStore ? {color: "white"} : null }  activeStyle={ props.isDarknessStore ? {color: "#888686" } : {color: "#212121"}} exact to="/">Home</NavLink>
+                <NavLink style={ props.isDarknessStore ? {color: "white"} : null }  activeStyle={ props.isDarknessStore ? {color: "#888686" } : {color: "#212121"}} to="/about/">About</NavLink>
+                <NavLink style={ props.isDarknessStore ? {color: "white"} : null }  activeStyle={ props.isDarknessStore ? {color: "#888686" } : {color: "#212121"}} to="/blog/">Blog</NavLink>
+                <NavLink style={ props.isDarknessStore ? {color: "white"} : null }  activeStyle={ props.isDarknessStore ? {color: "#888686" } : {color: "#212121"}} to="/software/">Software</NavLink>
+                <NavLink style={ props.isDarknessStore ? {color: "white"} : null }  activeStyle={ props.isDarknessStore ? {color: "#888686" } : {color: "#212121"}} to="/contact/">Contact</NavLink>
                 <button onClick={handleDarkMode} className="brightnessbutton">
                     <img src={props.isDarknessStore ? Brightness : Darkness} alt="" />
                 </button>
