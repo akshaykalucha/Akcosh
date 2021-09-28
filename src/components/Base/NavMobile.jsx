@@ -9,7 +9,7 @@ import './navmobile.css';
 function NavMobile(props) {
     return (
         <div className="mainParentMob">
-            <div style={ props.isDarknessStore ? {backgroundColor: "#212121"} : null } className="parentMobNav">
+            <div style={ props.isDarknessStore ? {backgroundColor: "#212121", boxShadow: "rgb(0 0 0 / 20%) 2px 0px 20px 0px", borderBottom: "none"} : null } className="parentMobNav">
                 <div className="navmobile">
                         <NavLink style={ props.isDarknessStore ? {color: "white"} : null } to="/" className="navmobilea">
                             <img style={ props.isDarknessStore ? {filter: "brightness(0) invert(1)"} : null } className="navmobilelogo" src={Mylogo} alt=""/>
