@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 class Contact extends Component {
     render() { 
         return ( 
-            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a", color: "white"} : null } className="contactme">
+            <div style={ this.props.isDark ? {backgroundColor: "#212121", color: "white"} : null } className="contactme">
                 <div className="contactform">
                     <h4 className="contactmehead">
                         Feel free to email me via

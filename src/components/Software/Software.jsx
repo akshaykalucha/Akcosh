@@ -5,13 +5,13 @@ import { Tableheading } from '../Home/Content';
 import { webArchitecture } from '../Home/Content';
 import { ServicesHeading } from '../Home/Content';
 import { SoftwareServices } from '../Home/Content';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 
 class Software extends Component {
     render() { 
         return ( 
-            <div className="software">
+            <div style={ this.props.isDark ? {backgroundColor: "#212121", color:"white"} : null } className="software">
                 <div className="mysoftwareTable">
                     <h1>Software Repository</h1>
                     <div className="softwareTable">
@@ -25,20 +25,20 @@ class Software extends Component {
                             </thead>
                             <tbody>
                                 {SoftwareTable.map((data, key) => {
-                                    return <tr key={key}>
-                                                <td>{data.title}</td>
-                                                <td>{data.description}</td>
-                                                <td>{data.language}</td>
-                                                <td>{data.date}</td>
-                                                <td>{data.stars}</td>
-                                                <td>{data.updates}</td>
+                                    return <tr  key={key}>
+                                                <td style={ this.props.isDark ? {color:"white"} : null }>{data.title}</td>
+                                                <td style={ this.props.isDark ? {color:"white"} : null }>{data.description}</td>
+                                                <td style={ this.props.isDark ? {color:"white"} : null }>{data.language}</td>
+                                                <td style={ this.props.isDark ? {color:"white"} : null }>{data.date}</td>
+                                                <td style={ this.props.isDark ? {color:"white"} : null }>{data.stars}</td>
+                                                <td style={ this.props.isDark ? {color:"white"} : null }>{data.updates}</td>
                                             </tr>
                                 })}
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div className="softwareSection">
+                <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a", color:"white"} : null } className="softwareSection">
                     <div className="webarch">
                         <div className="softwareIntro">
                             <h2>Technology Stack</h2>
@@ -72,10 +72,10 @@ class Software extends Component {
                         <tbody>
                             {SoftwareServices.map((data, key) => {
                                 return <tr key={key}>
-                                        <td>{data.Name}</td>
-                                        <td>{data.Endpoint}</td>
-                                        <td>{data.Language}</td>
-                                        <td>{data.Description}</td>
+                                        <td style={ this.props.isDark ? {color:"white"} : null }>{data.Name}</td>
+                                        <td style={ this.props.isDark ? {color:"white"} : null }>{data.Endpoint}</td>
+                                        <td style={ this.props.isDark ? {color:"white"} : null }>{data.Language}</td>
+                                        <td style={ this.props.isDark ? {color:"white"} : null }>{data.Description}</td>
                                     </tr>
                             })}
                         </tbody>
@@ -87,15 +87,10 @@ class Software extends Component {
 }
 
 const mapStateToProps = state => {
-    return {
-
+    return{
+        isDark: state.WebsiteInterface.isDark
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
 
-    }
-}
-
-export default connect(mapDispatchToProps, mapStateToProps)(Software);
+export default connect(mapStateToProps)(Software);
