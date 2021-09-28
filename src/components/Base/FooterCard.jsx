@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Footercard.css';
 import axios from 'axios';
+import {connect} from 'react-redux';
+
 
 class FooterCard extends Component {
     state = {
@@ -40,11 +42,11 @@ class FooterCard extends Component {
 
     render() { 
         return (
-            <div className="footercard">
-                <div className="footerCardSection">
+            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="footercard">
+                <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="footerCardSection">
                     <form action="#" className="footercardform">
-                        <h3 className="footerCardheading">Subscribe to Akcosh.me</h3>
-                        <p className="footerCardP">And get the latest articles delivered right to your inbox!</p>
+                        <h3 style={ this.props.isDark ? {color: "white"} : null } className="footerCardheading">Subscribe to Akcosh.me</h3>
+                        <p style={ this.props.isDark ? {color: "white"} : null } className="footerCardP">And get the latest articles delivered right to your inbox!</p>
                         <div className="footerforminput">
                             <input value={this.state.email} onChange={(e) => this.setState({email: e.target.value})} aria-label="please insert your email" form="[object Object]" placeholder="youremail@example.com" type="email" className="footerinput" />
                             <button disabled={this.state.changeClr ? true : false} onClick={(e) => {this.subscribe(e)}} type="submit" className="footerbutton">Subscribe</button>
@@ -58,5 +60,11 @@ class FooterCard extends Component {
         );
     }
 }
+
+const mapStateToProps = state => {
+    return{
+        isDark: state.WebsiteInterface.isDark
+    }
+}
  
-export default FooterCard;
+export default connect(mapStateToProps)(FooterCard);

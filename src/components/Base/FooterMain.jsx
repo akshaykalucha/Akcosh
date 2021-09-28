@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './footermain.css';
+import {connect} from 'react-redux';
 import mylogo from './mylogo.svg';
 import reactlogo from '../Assets/reactjslogo.png';
 // import vercellogo from '../Assets/vercelLogo.png';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+
 
 class FooterMain extends Component {
     render() { 
@@ -47,21 +49,21 @@ class FooterMain extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className="FooterEnding">
-                    <div className="footerendingcontent">
+                <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="FooterEnding">
+                    <div style={ this.props.isDark ? {color: "white"} : null } className="footerendingcontent">
                         ©
                         <NavLink aria-current="page" className="footerName" to="/">Akcosh</NavLink>
                             2019-2021 Built with
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/react">
-                                <img src={reactlogo} alt="" className="reactfooterimg" />
+                                <img style={ this.props.isDark ? {filter: "brightness(0) invert(1)"} : null } src={reactlogo} alt="" className="reactfooterimg" />
                             </a>
                             Open sourced on
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com">
-                                <svg className="reactfooterimg" width="24" height="24" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="M6 1q1.633 0 3.012.805t2.184 2.184.805 3.012q0 1.961-1.145 3.527t-2.957 2.168q-.211.039-.312-.055t-.102-.234l.004-.598q.004-.575.004-1.051 0-.758-.406-1.109.445-.047.801-.141t.734-.305.633-.52.414-.82.16-1.176q0-.93-.617-1.609.289-.711-.062-1.594-.219-.07-.633.086t-.719.344l-.297.187q-.727-.203-1.5-.203t-1.5.203q-.125-.086-.332-.211t-.652-.301-.664-.105q-.352.883-.062 1.594-.617.68-.617 1.609 0 .664.16 1.172t.41.82.629.523.734.305.801.141q-.305.281-.383.805-.164.078-.352.117t-.445.039-.512-.168-.434-.488q-.148-.25-.379-.406t-.387-.187l-.156-.023q-.164 0-.227.035t-.039.09.07.109.102.094l.055.039q.172.078.34.297t.246.398l.078.18q.102.297.344.48t.523.234.543.055.434-.027l.18-.031q0 .297.004.691t.004.426q0 .141-.102.234t-.312.055q-1.812-.602-2.957-2.168T.001 7.001q0-1.633.805-3.012T2.99 1.805 6.002 1zM2.273 9.617q.023-.055-.055-.094-.078-.023-.102.016-.023.055.055.094.07.047.102-.016zm.243.266q.055-.039-.016-.125-.078-.07-.125-.023-.055.039.016.125.078.078.125.023zm.234.351q.07-.055 0-.148-.062-.102-.133-.047-.07.039 0 .141t.133.055zm.328.328q.062-.062-.031-.148-.094-.094-.156-.023-.07.062.031.148.094.094.156.023zm.445.196q.023-.086-.102-.125-.117-.031-.148.055t.102.117q.117.047.148-.047zm.493.039q0-.102-.133-.086-.125 0-.125.086 0 .102.133.086.125 0 .125-.086zm.453-.078q-.016-.086-.141-.07-.125.023-.109.117t.141.062.109-.109z"></path></svg>
+                                <svg style={ this.props.isDark ? {filter: "brightness(0) invert(1)"} : null } className="reactfooterimg" width="24" height="24" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="M6 1q1.633 0 3.012.805t2.184 2.184.805 3.012q0 1.961-1.145 3.527t-2.957 2.168q-.211.039-.312-.055t-.102-.234l.004-.598q.004-.575.004-1.051 0-.758-.406-1.109.445-.047.801-.141t.734-.305.633-.52.414-.82.16-1.176q0-.93-.617-1.609.289-.711-.062-1.594-.219-.07-.633.086t-.719.344l-.297.187q-.727-.203-1.5-.203t-1.5.203q-.125-.086-.332-.211t-.652-.301-.664-.105q-.352.883-.062 1.594-.617.68-.617 1.609 0 .664.16 1.172t.41.82.629.523.734.305.801.141q-.305.281-.383.805-.164.078-.352.117t-.445.039-.512-.168-.434-.488q-.148-.25-.379-.406t-.387-.187l-.156-.023q-.164 0-.227.035t-.039.09.07.109.102.094l.055.039q.172.078.34.297t.246.398l.078.18q.102.297.344.48t.523.234.543.055.434-.027l.18-.031q0 .297.004.691t.004.426q0 .141-.102.234t-.312.055q-1.812-.602-2.957-2.168T.001 7.001q0-1.633.805-3.012T2.99 1.805 6.002 1zM2.273 9.617q.023-.055-.055-.094-.078-.023-.102.016-.023.055.055.094.07.047.102-.016zm.243.266q.055-.039-.016-.125-.078-.07-.125-.023-.055.039.016.125.078.078.125.023zm.234.351q.07-.055 0-.148-.062-.102-.133-.047-.07.039 0 .141t.133.055zm.328.328q.062-.062-.031-.148-.094-.094-.156-.023-.07.062.031.148.094.094.156.023zm.445.196q.023-.086-.102-.125-.117-.031-.148.055t.102.117q.117.047.148-.047zm.493.039q0-.102-.133-.086-.125 0-.125.086 0 .102.133.086.125 0 .125-.086zm.453-.078q-.016-.086-.141-.07-.125.023-.109.117t.141.062.109-.109z"></path></svg>
                             </a>
                             and deployed on
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/vercel">
-                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEzIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgeDE9IjEwMC45MyUiIHkxPSIxODEuMjgzJSIgeDI9IjQxLjc2OSUiIHkyPSIxMDAlIiBpZD0iYSI+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRiIgb2Zmc2V0PSIwJSIvPjxzdG9wIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0zNTAgMTUwbDU3IDEwMEgyOTN6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjkzIC0xNTApIiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="" className="reactfootervercelimg" />
+                                <img style={ this.props.isDark ? {filter: "brightness(0) invert(1)"} : null } src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEzIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgeDE9IjEwMC45MyUiIHkxPSIxODEuMjgzJSIgeDI9IjQxLjc2OSUiIHkyPSIxMDAlIiBpZD0iYSI+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRiIgb2Zmc2V0PSIwJSIvPjxzdG9wIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0zNTAgMTUwbDU3IDEwMEgyOTN6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjkzIC0xNTApIiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="" className="reactfootervercelimg" />
                             </a>
                     </div>
                 </div>
@@ -69,5 +71,11 @@ class FooterMain extends Component {
         );
     }
 }
+
+const mapStateToProps = state => {
+    return{
+        isDark: state.WebsiteInterface.isDark
+    }
+}
  
-export default FooterMain;
+export default connect(mapStateToProps)(FooterMain);

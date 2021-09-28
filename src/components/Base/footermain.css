@@ -57,7 +57,7 @@
     transition: all 0.2s ease-in-out 0s;
 }
 .FooterEnding{
-    max-width: 850px;
+    /* max-width: 850px; */
     margin: 0px auto;
     text-align: center;
     padding: 1rem;
@@ -97,9 +97,9 @@
 }
 
 @media (max-width: 960px){
-    .FooterEnding{
+    /* .FooterEnding{
         width: 95%;
-    }
+    } */
     .footerendingcontent{
         flex-direction: column;
     }

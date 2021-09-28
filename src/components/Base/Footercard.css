@@ -3,10 +3,9 @@
     padding-top: 3rem;
     max-width: 1280px;
     margin: 0px auto;
-    width: 90%;
 }
 
-@media (min-width: 993px){
+/* @media (min-width: 993px){
     .footercard {
         width: 80%;
     }
@@ -15,7 +14,7 @@
     .footercard{
         width: 90%;
     }
-}
+} */
 .footerCardSection {
     width: 70%;
     margin: 0px auto -12rem;
@@ -89,7 +88,7 @@
 
 @media (max-width: 800px){
     .footerCardSection{
-        width: 100%;
+        width: 90%;
     }
     .footerCardheading{
         font-size: 1em;

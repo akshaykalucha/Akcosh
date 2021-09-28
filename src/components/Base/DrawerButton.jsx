@@ -29,7 +29,7 @@ function DrawerButton(props) {
 
 const mapStateToProps = state => {
     return {
-        isDarknessStore: state.isDark
+        isDarknessStore: state.WebsiteInterface.isDark
     }
 }
 export default connect(mapStateToProps)(DrawerButton)
