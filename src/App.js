@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import RootMain from './components/RootMain'
+import RootMain from './components/RootMain';
+import {connect} from 'react-redux';
 
 export class App extends Component {
     render() {
         return (
-            <RootMain />
+            <div style={ this.props.isDark ? {backgroundColor:"#212121"} : null }>
+                <RootMain />
+            </div>
         )
     }
 }
+const mapStateToProps = state => {
+    return{
+        isDark: state.WebsiteInterface.isDark
+    }
+}
 
-export default App
+
+export default connect(mapStateToProps)(App);
