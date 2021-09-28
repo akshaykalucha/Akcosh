@@ -54,7 +54,7 @@ function ConvLstToDate(arr){
         <div>
             {
             BlogData ?
-            <div className="mainBlog">
+            <div style={ props.isDark ? {backgroundColor:"#212121"} : null } className="mainBlog">
                 <div className="textView">
                     <div className="tags__view">
                         {BlogData.tags.map((tag, key) => 
@@ -65,6 +65,7 @@ function ConvLstToDate(arr){
                         <p><i>{BlogData.Date}</i></p>
                     </div>
                     <ReactQuill
+                    style={ props.isDark ? {backgroundColor:"#2b2a2a", color:"white"} : null }
                     value={BlogData.deltaData}
                     modules={{syntax: true}}
                     readOnly={true}
@@ -85,10 +86,10 @@ function ConvLstToDate(arr){
 
 
 const mapStateToProps = state => {
-    return {
+    return{
+        isDark: state.WebsiteInterface.isDark
     }
 }
-
 const mapDispatchToProps = dispatch => {
     return {
     }}
