@@ -42,8 +42,8 @@ class FooterCard extends Component {
 
     render() { 
         return (
-            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="footercard">
-                <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="footerCardSection">
+            <div style={ this.props.isDark ? {backgroundColor: "#212121"} : null } className="footercard">
+                <div style={ this.props.isDark ? {backgroundColor: "#212121"} : null } className="footerCardSection">
                     <form action="#" className="footercardform">
                         <h3 style={ this.props.isDark ? {color: "white"} : null } className="footerCardheading">Subscribe to Akcosh.me</h3>
                         <p style={ this.props.isDark ? {color: "white"} : null } className="footerCardP">And get the latest articles delivered right to your inbox!</p>

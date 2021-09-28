@@ -12,7 +12,7 @@ import unsplash from '../Assets/unsplash.svg';
 class About extends Component {
     render() { 
         return ( 
-            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="AboutContainer">
+            <div style={ this.props.isDark ? {backgroundColor: "#212121"} : null } className="AboutContainer">
                 <div className="Aboutmewrapper">
                     <h1 style={ this.props.isDark ? {color: "white"} : null } className="aboutheading">About me</h1>
                     <div className="aboutmeContent">

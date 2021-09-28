@@ -49,7 +49,7 @@ class FooterMain extends Component {
                         </ul>
                     </div>
                 </div>
-                <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="FooterEnding">
+                <div style={ this.props.isDark ? {backgroundColor: "#212121"} : null } className="FooterEnding">
                     <div style={ this.props.isDark ? {color: "white"} : null } className="footerendingcontent">
                         ©
                         <NavLink aria-current="page" className="footerName" to="/">Akcosh</NavLink>

@@ -6,12 +6,13 @@ import Services from './Services';
 import Otherwork from './Otherwork';
 import PopularArticles from './PopularArticles';
 import './indexpage.css';
+import {connect} from 'react-redux';
 
 
 export class Index extends Component{
     render() {
         return (
-            <div className="index">
+            <div style={ this.props.isDark ? {backgroundColor: "#212121", color: "white"} : null } className="index">
                 <Intro />
                 <MyWork />
                 <FeaturedWork />
@@ -23,4 +24,11 @@ export class Index extends Component{
     }
 }
 
-export default Index;
+const mapStateToProps = state => {
+    return{
+        isDark: state.WebsiteInterface.isDark
+    }
+}
+
+
+export default connect(mapStateToProps)(Index);

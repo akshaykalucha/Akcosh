@@ -17,7 +17,7 @@ class NavDesktop extends Component {
 
     render() { 
         return ( 
-            <div style={ this.props.isDark ? {backgroundColor: "#2b2a2a"} : null } className="parentNav">
+            <div style={ this.props.isDark ? {backgroundColor: "#212121"} : null } className="parentNav">
                 <div className="desktopnav hfIis">
                     <div className="nameNav">
                     <img style={ this.props.isDark ? {filter: "brightness(0) invert(1)"} : null } className="Nav__Logo-A" src={Mylogo} alt=""/>
