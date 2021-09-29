@@ -29,7 +29,7 @@ class MyWork extends Component {
                         </div>
                     </div>
                     <div className="mytechstack">
-                        <NavLink to="blog/the-tech-tools-I-use">See the tech tools I use</NavLink>
+                        <NavLink style={ this.props.isDark ? {color: "white"} : null } to="blog/the-tech-tools-I-use">See the tech tools I use</NavLink>
                     </div>
                 </div>
             </div>
