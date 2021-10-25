@@ -38,11 +38,6 @@ const LoadingMessage = () => (
     <Loading />
 )
 
-const DocViewer = (
-    lazy(() => (
-      import('../DocViwer/Doc')
-    ))
-)
 
 export default class Main extends Component {
     render() {
@@ -60,7 +55,6 @@ export default class Main extends Component {
                         <Route path="/contact" exact component={ContactComponent} />
                         <Route path="/blog" exact component={SoftwareComponent} />
                         <Route path="/software" exact component={SoftwareComponent} />
-                        <Route path="/viewdoc" exact component={DocViewer} />
                         </Suspense>
                     </Switch>
                 <Footer />
